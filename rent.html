@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- объявление типа документа -->
+<html lang="ru">
+  <!-- язык - русский -->
+  <head>
+    <!-- здесь служебная информация о странице -->
+    <meta charset="UTF-8" />
+    <!-- устанавливает кодировку UTF-8 -->
+    <title>Аренда</title>
+    <!-- название страницы, отображается во вкладке браузера -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Подключение CSS-файла со стилями -->
+  </head>
+  <body class="background-color-white">
+    <!-- основной контейнер страницы, класс - для задания белого фона -->
+
+    <!-- Header (шапка) -->
+    <header class="background-color-green">
+      <!-- основной блок шапки сайта, класс задаёт зелёный фон через CSS -->
+      <div class="header-inner">
+        <!-- внутренний контейнер для логотипа, меню и иконки входа -->
+        <div class="logo">
+          <!-- контейнер логотипа -->
+          <a href="index.html">
+            <!-- ссылка на главную -->
+            <img src="images/logo.png" alt="EcoRide" class="logo-img" />
+            <!-- логотип -->
+          </a>
+        </div>
+        <nav>
+          <!-- навигационное меню -->
+          <a href="rent.html" class="white-text highlighted-link active"
+            >Аренда</a
+          >
+          <!-- ссылка соответствующий раздел -->
+          <a href="tariffs.html" class="white-text highlighted-link">Тарифы</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="promotion.html" class="white-text highlighted-link">Акции</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="app.html" class="white-text highlighted-link">Приложение</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="about-us.html" class="white-text highlighted-link">О нас</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="faq.html" class="white-text highlighted-link">FAQ</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="reviews.html" class="white-text highlighted-link">Отзывы</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="contacts.html" class="white-text highlighted-link"
+            >Контакты</a
+          >
+          <!-- ссылка соответствующий раздел -->
+        </nav>
+        <div class="login">
+          <!-- контейнер иконки входа -->
+          <a href="ecoride-club.html">
+            <!-- ссылка на страницу для зарегистрированных пользователей -->
+            <img src="images/login-icon.png" alt="Вход" class="login-icon" />
+            <!-- иконка входа -->
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero section (первый экран) -->
+    <section class="hero-rent">
+      <!-- основной блок первого экрана -->
+      <div class="hero-inner">
+        <!-- внутренний контейнер для выравнивания текста и картинки рядом -->
+        <div class="hero-text">
+          <!-- блок с текстом -->
+          <h2 class="green-text">
+            Арендуйте самокат или электрокар —
+            <span class="orange-text">быстро, удобно и экологично</span>
+          </h2>
+          <!-- заголовок, строчный элемент span нужен, чтобы на второй строке заголовка текст стал оранжевым -->
+          <p class="green-text">
+            EcoRide предлагает простой способ<br />арендовать городской
+            электротранспорт.<br />Будь то
+            <a href="#scooters" class="orange-text highlighted-link-green"
+              >электросамокат</a
+            >
+            для короткой<br />поездки по делам или
+            <a href="#electric-cars" class="orange-text highlighted-link-green"
+              >электрокар</a
+            >
+            для<br />более длительного маршрута —<br />вы получаете свободу
+            движения,<br />не нанося вреда окружающей среде.
+          </p>
+          <!-- описание, с помощью <br> переношу текст на следующую строку, ещё здесь якорные ссылки на другие блоки страницы -->
+          <ul class="green-text no-bullets">
+            <!-- список преимуществ -->
+            <li>✅ Удобная система бронирования</li>
+            <!-- элемент списка' -->
+            <li>✅ Прозрачные тарифы</li>
+            <!-- элемент списка' -->
+            <li>✅ Поддержка 24/7</li>
+            <!-- элемент списка' -->
+            <li>✅ Экологичный транспорт без выхлопов</li>
+            <!-- элемент списка' -->
+          </ul>
+        </div>
+        <img src="images/6.png" alt="Самокат" class="hero-img" />
+        <!-- изображение -->
+      </div>
+    </section>
+
+    <!-- блок аренды самокатов -->
+    <section class="block" id="scooters">
+      <!-- Основной контейнер второго блока -->
+      <img src="images/7.png" alt="парень на самокате" class="desc-img" />
+      <!-- изображение -->
+      <div class="desc-text">
+        <!-- текстовый блок справа от картинки -->
+        <h3 class="orange-text">Аренда электросамокатов</h3>
+        <!-- заголовок -->
+        <p class="green-text">
+          Идеальный вариант для коротких<br />
+          перемещений по городу, прогулок<br />
+          и поездок «от двери до двери».<br />
+          С самокатом вы избегаете пробок,<br />
+          не ищете парковку и просто<br />
+          наслаждаетесь движением.
+        </p>
+        <ul class="green-text no-bullets">
+          <!-- список преимуществ -->
+          <li>✅ Минимальный шаг аренды — от 1 минуты</li>
+          <!-- элемент списка' -->
+          <li>✅ Простой запуск через QR-код</li>
+          <!-- элемент списка' -->
+          <li>✅ Доступ через интерактивную карту</li>
+          <!-- элемент списка' -->
+          <li>✅ Актуальный заряд и доступность</li>
+          <!-- элемент списка' -->
+          <li>✅ Бесплатные зоны парковки</li>
+          <!-- элемент списка' -->
+        </ul>
+        <a href="app.html" class="button-green white-text">В ПРИЛОЖЕНИЕ</a>
+        <!-- кнопка "В приложение" -->
+        <a href="tariffs.html" class="button-orange white-text">ТАРИФЫ</a>
+        <!-- кнопка "Тарифы" -->
+      </div>
+    </section>
+
+    <!-- Блок аренды электрокаров -->
+    <section class="block" id="electric-cars">
+      <!-- основной контейнер третьего блока -->
+      <div class="block-text">
+        <!-- блок с заголовком, описанием и кнопками -->
+        <h3 class="orange-text">Аренда электрокаров</h3>
+        <!-- заголовок -->
+        <p class="green-text">
+          Больше комфорта и пространства — <br />
+          <!-- описание, с помощью <br> переношу текст на следующую строку -->
+          для деловых встреч, поездок за город<br />
+          или в аэропорт<br />
+          Электрокар — это тишина, чистота<br />
+          и полная автономность.
+        </p>
+        <ul class="green-text no-bullets">
+          <!-- список преимуществ -->
+          <li>✅ Тарифы с учётом пробега</li>
+          <!-- элемент списка' -->
+          <li>✅ Зарядки доступны по всему городу</li>
+          <!-- элемент списка' -->
+          <li>✅ Встроенная навигация и мультимедиа</li>
+          <!-- элемент списка' -->
+          <li>✅ Доступ через интерактивную карту</li>
+          <!-- элемент списка' -->
+          <li>✅ Поддержка дневной и почасовой аренды</li>
+          <!-- элемент списка' -->
+          <li>✅ Выбор моделей: от компактных до семейных</li>
+          <!-- элемент списка' -->
+        </ul>
+        <a href="app.html" class="button-green white-text">В ПРИЛОЖЕНИЕ</a>
+        <!-- кнопка "В приложение" -->
+        <a href="tariffs.html" class="button-orange white-text">ТАРИФЫ</a>
+        <!-- кнопка "Тарифы" -->
+      </div>
+      <img src="images/8.png" alt="самокат" class="block-img" />
+      <!-- изображение -->
+    </section>
+
+    <!-- Секция с обучающими видео о самокате и электрокаре -->
+    <section class="video-guide-section">
+      <!-- обертка всего блока видео -->
+      <div class="video-guide-inner">
+        <!-- контейнер для размещения двух видеоблоков в строку -->
+        <div class="video-block">
+          <!-- первый блок с видео и подписью -->
+          <p class="video-caption green-text">
+            <!-- подпись -->
+            В первый раз на электросамокате?<br />
+            Посмотрите это несколькосекундное видео
+          </p>
+          <iframe
+            src="https://www.youtube.com/embed/natv8ORLiI4"
+            frameborder="0"
+          >
+            <!-- встроенное видео с YouTube, frameborder="0" Убирает рамку вокруг iframe -->
+          </iframe>
+        </div>
+
+        <div class="video-block">
+          <!-- второй блок с видео и подписью -->
+          <p class="video-caption green-text">
+            <!-- подпись -->
+            Ни разу не пользовались электрокаром?<br />
+            Это короткое видео для вас
+          </p>
+          <iframe
+            src="https://www.youtube.com/embed/ccDq9D_zBL8"
+            frameborder="0"
+          >
+            <!-- встроенное видео с YouTube, frameborder="0" Убирает рамку вокруг iframe -->
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок с ссылками на страницы информации о безопасной езде, о подписке, для сотрудников и для генерального директора -->
+    <section class="block">
+      <!-- основной блок секции о самокатах -->
+      <a href="safety.html" class="green-text highlighted-link"
+        >Узнать о правилах безопасности во время поездок</a
+      ><br /><!-- ссылка и перенос строки -->
+      <a href="subscription.html" class="green-text highlighted-link"
+        >Новинка! Подписка EcoRide</a
+      ><br />
+      <!-- ссылка и перенос строки -->
+      <a href="ecoride-team-space.html" class="green-text highlighted-link"
+        >Перейти на страницу для сотрудников</a
+      ><br />
+      <!-- ссылка и перенос строки -->
+      <a href="boss-page.html" class="green-text highlighted-link"
+        >Перейти на страницу для генерального директора</a
+      >
+      <!-- ссылка -->
+    </section>
+
+    <!-- Footer (подвал) -->
+    <footer class="background-color-green">
+      <!-- основной контейнер подвала -->
+      <div class="footer-inner">
+        <!-- внутренний флекс-контейнер: логотип слева, текст по центру, пустое пространство справа для симметрии -->
+        <div class="footer-logo">
+          <!-- блок для логотипа -->
+          <img src="images/logo.png" alt="EcoRide" class="logo-img" />
+          <!-- лого -->
+        </div>
+        <div class="footer-text">
+          <!-- блок с текстовой информацией в центре подвала -->
+          <p class="white-text footer-text">
+            © EcoRide 2025 All rights reserved.<br />
+            <!-- текст, с помощью <br> переношу текст на следующую строку -->
+            Design and development by Julia Khaipova
+          </p>
+        </div>
+        <div class="footer-empty"></div>
+        <!-- просто заглушка для выравнивания -->
+      </div>
+    </footer>
+  </body>
+</html>

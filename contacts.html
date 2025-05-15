@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- объявление типа документа -->
+<html lang="ru">
+  <!-- язык - русский -->
+  <head>
+    <!-- здесь служебная информация о странице -->
+    <meta charset="UTF-8" />
+    <!-- устанавливает кодировку UTF-8 -->
+    <title>Контакты</title>
+    <!-- название страницы, отображается во вкладке браузера -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Подключение CSS-файла со стилями -->
+  </head>
+  <body class="background-color-white">
+    <!-- основной контейнер страницы, класс - для задания белого фона -->
+
+    <!-- Header (шапка) -->
+    <header class="background-color-green">
+      <!-- основной блок шапки сайта, класс задаёт зелёный фон через CSS -->
+      <div class="header-inner">
+        <!-- внутренний контейнер для логотипа, меню и иконки входа -->
+        <div class="logo">
+          <!-- контейнер логотипа -->
+          <a href="index.html">
+            <!-- ссылка на главную -->
+            <img src="images/logo.png" alt="EcoRide" class="logo-img" />
+            <!-- логотип -->
+          </a>
+        </div>
+        <nav>
+          <!-- навигационное меню -->
+          <a href="rent.html" class="white-text highlighted-link">Аренда</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="tariffs.html" class="white-text highlighted-link">Тарифы</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="promotion.html" class="white-text highlighted-link">Акции</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="app.html" class="white-text highlighted-link">Приложение</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="about-us.html" class="white-text highlighted-link">О нас</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="faq.html" class="white-text highlighted-link">FAQ</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="reviews.html" class="white-text highlighted-link">Отзывы</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="contacts.html" class="white-text highlighted-link active"
+            >Контакты</a
+          >
+          <!-- ссылка соответствующий раздел -->
+        </nav>
+        <div class="login">
+          <!-- контейнер иконки входа -->
+          <a href="ecoride-club.html">
+            <!-- ссылка на страницу для зарегистрированных пользователей -->
+            <img src="images/login-icon.png" alt="Вход" class="login-icon" />
+            <!-- иконка входа -->
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="contacts-section">
+      <!-- основной контейнер страницы -->
+      <section class="contacts-wrapper">
+        <!-- внутренний контейнер для левой и правой колонок -->
+
+        <!-- Левая колонка -->
+        <div class="contacts-left">
+          <!-- контейнер для левой колонки -->
+          <h2 class="orange-text">Контакты</h2>
+          <!-- заголовок -->
+          <p class="green-text">
+            <!-- текст -->
+            Остались вопросы? Мы всегда на связи — будь то вопрос, предложение
+            или просто отзыв. Напишите нам — и мы обязательно поможем ♡
+          </p>
+
+          <ul class="contact-list no-bullets">
+            <!-- список контактов -->
+            <li>
+              <!-- элемент списка контактов -->
+              <img src="images/icon-location.svg" class="contact-icon" />
+              <!-- иконка местоположения -->
+              <div class="green-text">
+                <!-- текст -->
+                <strong>EcoRide, офис в Санкт-Петербурге</strong><br />
+                <!-- жирный зелёный текст -->
+                <span class="orange-text">Дворцовая пл., 2</span>
+                <!-- оранжевый текст -->
+              </div>
+            </li>
+            <li>
+              <img src="images/icon-phone.svg" class="contact-icon" />
+              <!-- иконка телефона -->
+              <div class="green-text">
+                <!-- текст -->
+                <strong>+7 (800) 000-00-00</strong><br />
+                <!-- жирный зелёный текст -->
+                <span class="orange-text"
+                  >Служба поддержки работает круглосуточно</span
+                >
+                <!-- оранжевый текст -->
+              </div>
+            </li>
+            <li>
+              <img src="images/icon-mail.svg" class="contact-icon" />
+              <!-- иконка почты -->
+              <div class="green-text">
+                <!-- текст -->
+                <strong>support@ecoride.ru</strong><br />
+                <!-- жирный зелёный текст -->
+                <span class="orange-text"
+                  >Для обращений, предложений и вопросов</span
+                >
+                <!-- оранжевый текст -->
+              </div>
+            </li>
+            <li>
+              <img src="images/icon-tg.svg" class="contact-icon" />
+              <!-- иконка Telegram -->
+              <div class="green-text">
+                <!-- текст -->
+                <a
+                  href="https://t.me/julia_khai"
+                  target="_blank"
+                  class="green-text highlighted-link"
+                  ><strong>Чат в Telegram</strong></a
+                ><br />
+                <!-- жирный зелёный текст -->
+                <span class="orange-text"
+                  >Удобно задать вопрос, узнать о тарифах</span
+                >
+                <!-- оранжевый текст -->
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Правая колонка (карта + форма) -->
+        <div class="contacts-right">
+          <!-- контейнер для правой колонки -->
+          <div class="map-container">
+            <!-- контейнер для карты -->
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A3d46c157d7ad38f5aa7db7207aeab4330ec8c5750ad53cefd71567339948de79&amp;source=constructor"
+              frameborder="0"
+            ></iframe>
+            <!-- карта Яндекс -->
+          </div>
+
+          <p class="green-text">
+            Также вы можете обратиться к нам через форму:
+          </p>
+          <!-- заголовок формы -->
+          <form class="contact-form">
+            <!-- форма обратной связи -->
+            <input type="text" placeholder="Имя" />
+            <!-- поле ввода имени -->
+            <input type="email" placeholder="Email" />
+            <!-- поле ввода email -->
+            <textarea placeholder="Вопрос"></textarea>
+            <!-- текстовое поле для вопроса -->
+            <button type="submit">ОТПРАВИТЬ</button>
+            <!-- кнопка отправки формы (не активна) -->
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <!-- Блок с ссылками на страницы информации о безопасной езде, о подписке, для сотрудников и для генерального директора -->
+    <section class="block">
+      <!-- основной блок секции о самокатах -->
+      <a href="safety.html" class="green-text highlighted-link"
+        >Узнать о правилах безопасности во время поездок</a
+      ><br /><!-- ссылка и перенос строки -->
+      <a href="subscription.html" class="green-text highlighted-link"
+        >Новинка! Подписка EcoRide</a
+      ><br />
+      <!-- ссылка и перенос строки -->
+      <a href="ecoride-team-space.html" class="green-text highlighted-link"
+        >Перейти на страницу для сотрудников</a
+      ><br />
+      <!-- ссылка и перенос строки -->
+      <a href="boss-page.html" class="green-text highlighted-link"
+        >Перейти на страницу для генерального директора</a
+      >
+      <!-- ссылка -->
+    </section>
+
+    <!-- Footer (подвал) -->
+    <footer class="background-color-green">
+      <!-- основной контейнер подвала -->
+      <div class="footer-inner">
+        <!-- внутренний флекс-контейнер: логотип слева, текст по центру, пустое пространство справа для симметрии -->
+        <div class="footer-logo">
+          <!-- блок для логотипа -->
+          <img src="images/logo.png" alt="EcoRide" class="logo-img" />
+          <!-- лого -->
+        </div>
+        <div class="footer-text">
+          <!-- блок с текстовой информацией в центре подвала -->
+          <p class="white-text footer-text">
+            © EcoRide 2025 All rights reserved.<br />
+            <!-- текст, с помощью <br> переношу текст на следующую строку -->
+            Design and development by Julia Khaipova
+          </p>
+        </div>
+        <div class="footer-empty"></div>
+        <!-- просто заглушка для выравнивания -->
+      </div>
+    </footer>
+  </body>
+</html>

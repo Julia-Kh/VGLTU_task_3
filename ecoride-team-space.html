@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!-- объявление типа документа -->
+<html lang="ru">
+  <!-- язык - русский -->
+  <head>
+    <!-- здесь служебная информация о странице -->
+    <meta charset="UTF-8" />
+    <!-- устанавливает кодировку UTF-8 -->
+    <title>EcoRide Team Space</title>
+    <!-- название страницы, отображается во вкладке браузера -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Подключение CSS-файла со стилями -->
+    <!-- Скрипт для проверки пароля -->
+    <script language="JavaScript">
+      // Запрашиваем у пользователя пароль через диалоговое окно
+      login = prompt("Введите логин:", "");
+      pass = prompt("Введите пароль:", "");
+      if (pass === "1212" && login === "team") {
+        // Проверка на корректность пароля
+        alert(
+          "Пароль верный, логин тоже верный. Добро пожаловать, сотрудница компании!"
+        );
+      } else {
+        // При неверном пароле перенаправляем пользователя на главную страницу
+        alert(
+          "Пароль неверный или логин не верный. Или и то, и то. Доступ запрещен."
+        );
+        top.location.href = "../index.html";
+      }
+    </script>
+  </head>
+  <body class="background-color-white">
+    <!-- основной контейнер страницы, класс - для задания белого фона -->
+
+    <!-- Header (шапка) -->
+    <header class="background-color-green">
+      <!-- основной блок шапки сайта, класс задаёт зелёный фон через CSS -->
+      <div class="header-inner">
+        <!-- внутренний контейнер для логотипа, меню и иконки входа -->
+        <div class="logo">
+          <!-- контейнер логотипа -->
+          <a href="index.html">
+            <!-- ссылка на главную -->
+            <img src="images/logo.png" alt="EcoRide" class="logo-img" />
+            <!-- логотип -->
+          </a>
+        </div>
+        <nav>
+          <!-- навигационное меню -->
+          <a href="rent.html" class="white-text highlighted-link">Аренда</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="tariffs.html" class="white-text highlighted-link">Тарифы</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="promotion.html" class="white-text highlighted-link">Акции</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="app.html" class="white-text highlighted-link">Приложение</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="about-us.html" class="white-text highlighted-link">О нас</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="faq.html" class="white-text highlighted-link">FAQ</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="reviews.html" class="white-text highlighted-link">Отзывы</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="contacts.html" class="white-text highlighted-link"
+            >Контакты</a
+          >
+          <!-- ссылка соответствующий раздел -->
+        </nav>
+        <div class="login">
+          <!-- контейнер иконки входа -->
+          <a href="ecoride-club.html">
+            <!-- ссылка на страницу для зарегистрированных пользователей -->
+            <img src="images/login-icon.png" alt="Вход" class="login-icon" />
+            <!-- иконка входа -->
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Первый блок -->
+    <section class="block">
+      <!-- основной контейнер блока -->
+      <h2 class="orange-text">
+        EcoRide Team Space — <br />
+        <span class="green-text">только для команды</span>
+      </h2>
+      <!-- заголовок -->
+      <div class="text-block-сутеук">
+        <!-- контейнер текстового блока -->
+        <h4 class="green-text">
+          Добро пожаловать в рабочее пространство команды!
+        </h4>
+        <p class="orange-text">
+          Это внутренняя страница проекта EcoRide.<br />Здесь мы делимся
+          рабочими материалами, обсуждаем идеи,<br />отслеживаем задачи и просто
+          держим связь.
+        </p>
+        <!-- описание -->
+        <div>
+          <!-- Контейнер для документов -->
+          <h4 class="green-text">Документы и шаблоны</h4>
+          <!-- заголовок -->
+          <ul class="orange-text no-bullets">
+            <!-- список файлов -->
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1XzgS1MdqroJb7QpUusD-ZniKPtLIlfjk/edit?usp=sharing&ouid=100080644807782654721&rtpof=true&sd=true"
+                class="orange-text highlighted-link-green"
+                target="_blank"
+                >Маркетинговый план на квартал</a
+              >
+            </li>
+            <!-- элемент списка в виде ссылки на файл; target="_blank" указывает, что ссылка должна открываться в новой вкладке -->
+            <li>
+              <a
+                href="https://docs.google.com/document/d/17hn_PL0ixx8nvJXlAxM_PZIpGw0DAVLE/edit?usp=sharing&ouid=100080644807782654721&rtpof=true&sd=true"
+                class="orange-text highlighted-link-green"
+                target="_blank"
+                >Чек-лист запуска промо</a
+              >
+            </li>
+            <!-- элемент списка в виде ссылки на файл; target="_blank" указывает, что ссылка должна открываться в новой вкладке -->
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1LPMzVaelJ33ZehN1I4gb3jMFPYt-Og7y/edit?usp=sharing&ouid=100080644807782654721&rtpof=true&sd=true"
+                class="orange-text highlighted-link-green"
+                target="_blank"
+                >Регламент клиентской поддержки</a
+              >
+            </li>
+            <!-- элемент списка в виде ссылки на файл; target="_blank" указывает, что ссылка должна открываться в новой вкладке -->
+          </ul>
+        </div>
+        <div>
+          <!-- Контейнер для важных дат -->
+          <h4 class="green-text">Важные даты</h4>
+          <!-- заголовок -->
+          <ul class="orange-text no-bullets">
+            <!-- список файлов -->
+            <li>12 июня — запуск летней акции</li>
+            <!-- элемент списка -->
+            <li>20 июня — отчётный созвон</li>
+            <!-- элемент списка -->
+            <li>1 июля — презентация новых вариантов подписок</li>
+            <!-- элемент списка -->
+          </ul>
+        </div>
+        <div>
+          <!-- Контейнер для идей -->
+          <h4 class="green-text">Идеи на рассмотрении:</h4>
+          <!-- заголовок -->
+          <ul class="orange-text no-bullets">
+            <!-- список файлов -->
+            <li>«Чек-ин недели» — ежедневный вопрос в Telegram-чате</li>
+            <!-- элемент списка -->
+            <li>Добавить стикеры в поездку (визуальные бейджи)</li>
+            <!-- элемент списка -->
+            <li>Запуск «EcoRide на природе» — маршрут выходного дня</li>
+            <!-- элемент списка -->
+          </ul>
+        </div>
+        <div>
+          <!-- Контейнер оращения к сотрудникам -->
+          <h4 class="green-text">
+            Нужна помощь или хочешь внести предложение?<br />Напиши сотрудникам:
+          </h4>
+          <!-- заголовок -->
+          <ul class="orange-text no-bullets">
+            <!-- список файлов -->
+            <li>
+              По поводу дизайна —
+              <a
+                href="https://t.me/julia_khai"
+                target="_blank"
+                class="green-text highlighted-link"
+                >Юле</a
+              >
+            </li>
+            <!-- элемент списка -->
+            <li>
+              По поводу вёрстки —
+              <a
+                href="https://t.me/julia_khai"
+                target="_blank"
+                class="green-text highlighted-link"
+                >Юле</a
+              >
+            </li>
+            <!-- элемент списка -->
+            <li>
+              По поводу разработки сайта —
+              <a
+                href="https://t.me/julia_khai"
+                target="_blank"
+                class="green-text highlighted-link"
+                >Юле</a
+              >
+            </li>
+            <!-- элемент списка -->
+            <li>
+              По поводу разработки мобильного приложения —
+              <a
+                href="https://t.me/julia_khai"
+                target="_blank"
+                class="green-text highlighted-link"
+                >Юле</a
+              >
+            </li>
+            <!-- элемент списка -->
+            <li>
+              По поводу маркетинга —
+              <a
+                href="https://t.me/julia_khai"
+                target="_blank"
+                class="green-text highlighted-link"
+                >Юле</a
+              >
+            </li>
+            <!-- элемент списка -->
+          </ul>
+        </div>
+        <img src="images/27.png" alt="мем" class="desc-img" />
+        <!-- изображение -->
+      </div>
+    </section>
+
+    <!-- Блок с ссылками на страницы информации о безопасной езде, о подписке, для сотрудников и для генерального директора -->
+    <section class="block">
+      <!-- основной блок секции о самокатах -->
+      <a href="safety.html" class="green-text highlighted-link"
+        >Узнать о правилах безопасности во время поездок</a
+      ><br /><!-- ссылка и перенос строки -->
+      <a href="subscription.html" class="green-text highlighted-link"
+        >Новинка! Подписка EcoRide</a
+      ><br />
+      <!-- ссылка и перенос строки -->
+      <a
+        href="ecoride-team-space.html"
+        class="green-text highlighted-link active"
+        >Перейти на страницу для сотрудников</a
+      ><br />
+      <!-- ссылка и перенос строки -->
+      <a href="boss-page.html" class="green-text highlighted-link"
+        >Перейти на страницу для генерального директора</a
+      >
+      <!-- ссылка -->
+    </section>
+
+    <!-- Footer (подвал) -->
+    <footer class="background-color-green">
+      <!-- основной контейнер подвала -->
+      <div class="footer-inner">
+        <!-- внутренний флекс-контейнер: логотип слева, текст по центру, пустое пространство справа для симметрии -->
+        <div class="footer-logo">
+          <!-- блок для логотипа -->
+          <img src="images/logo.png" alt="EcoRide" class="logo-img" />
+          <!-- лого -->
+        </div>
+        <div class="footer-text">
+          <!-- блок с текстовой информацией в центре подвала -->
+          <p class="white-text footer-text">
+            © EcoRide 2025 All rights reserved.<br />
+            <!-- текст, с помощью <br> переношу текст на следующую строку -->
+            Design and development by Julia Khaipova
+          </p>
+        </div>
+        <div class="footer-empty"></div>
+        <!-- просто заглушка для выравнивания -->
+      </div>
+    </footer>
+  </body>
+</html>

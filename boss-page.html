@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- объявление типа документа -->
+<html lang="ru">
+  <!-- язык - русский -->
+  <head>
+    <!-- здесь служебная информация о странице -->
+    <meta charset="UTF-8" />
+    <!-- устанавливает кодировку UTF-8 -->
+    <title>EcoRide CEO Page</title>
+    <!-- название страницы, отображается во вкладке браузера -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Подключение CSS-файла со стилями -->
+    <!-- Скрипт для проверки пароля -->
+    <script language="JavaScript">
+      // Запрашиваем у пользователя пароль через диалоговое окно
+      login = prompt("Введите логин:", "");
+      pass = prompt("Введите пароль:", "");
+      if (pass === "1313" && login === "ceo") {
+        // Проверка на корректность пароля
+        alert(
+          "Пароль верный, логин тоже верный. Добро пожаловать, генеральный директор!"
+        );
+      } else {
+        // При неверном пароле перенаправляем пользователя на главную страницу
+        alert(
+          "Пароль неверный или логин не верный. Или и то, и то. Доступ запрещен."
+        );
+        top.location.href = "../index.html";
+      }
+    </script>
+  </head>
+  <body class="background-color-white">
+    <!-- основной контейнер страницы, класс - для задания белого фона -->
+
+    <!-- Header (шапка) -->
+    <header class="background-color-green">
+      <!-- основной блок шапки сайта, класс задаёт зелёный фон через CSS -->
+      <div class="header-inner">
+        <!-- внутренний контейнер для логотипа, меню и иконки входа -->
+        <div class="logo">
+          <!-- контейнер логотипа -->
+          <a href="index.html">
+            <!-- ссылка на главную -->
+            <img src="images/logo.png" alt="EcoRide" class="logo-img" />
+            <!-- логотип -->
+          </a>
+        </div>
+        <nav>
+          <!-- навигационное меню -->
+          <a href="rent.html" class="white-text highlighted-link">Аренда</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="tariffs.html" class="white-text highlighted-link">Тарифы</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="promotion.html" class="white-text highlighted-link">Акции</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="app.html" class="white-text highlighted-link">Приложение</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="about-us.html" class="white-text highlighted-link">О нас</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="faq.html" class="white-text highlighted-link">FAQ</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="reviews.html" class="white-text highlighted-link">Отзывы</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="contacts.html" class="white-text highlighted-link"
+            >Контакты</a
+          >
+          <!-- ссылка соответствующий раздел -->
+        </nav>
+        <div class="login">
+          <!-- контейнер иконки входа -->
+          <a href="ecoride-club.html">
+            <!-- ссылка на страницу для зарегистрированных пользователей -->
+            <img src="images/login-icon.png" alt="Вход" class="login-icon" />
+            <!-- иконка входа -->
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Первый блок -->
+    <section class="block">
+      <!-- основной блок первой секции -->
+      <div class="block-text">
+        <!-- блок с заголовком и описанием -->
+        <h2 class="green-text">
+          Секретная страница генерального директора Юли
+        </h2>
+        <!-- заголовок -->
+        <h3 class="green-text">Текущие задачи</h3>
+        <!-- заголовок -->
+        <ul class="no-bullets">
+          <!-- список без отметки в виде точки для элементов списка -->
+          <li>
+            <span class="orange-text no-bullets"
+              >✅<span class="strike">
+                Исследовать и анализировать рынок проката электросамокатов и
+                электрокаров РФ</span
+              ></span
+            >
+          </li>
+          <br />
+          <!-- элемент списка без указания пункта сптска в виде точки, добавляю вместо него галочку, сам текст зачёркиваю при помощи класса strike -->
+          <li>
+            <span class="orange-text no-bullets"
+              >✅<span class="strike">
+                Разработать стратегию сайта для компании EcoRide</span
+              ></span
+            >
+          </li>
+          <br />
+          <!-- элемент списка без указания пункта сптска в виде точки, добавляю вместо него галочку, сам текст зачёркиваю при помощи класса strike -->
+          <li>
+            <span class="orange-text no-bullets"
+              >✅<span class="strike">
+                Составить техническое задание на разработку сайта и провести
+                бриф</span
+              ></span
+            >
+          </li>
+          <br />
+          <!-- элемент списка без указания пункта сптска в виде точки, добавляю вместо него галочку, сам текст зачёркиваю при помощи класса strike -->
+          <li>
+            <span class="orange-text no-bullets"
+              >✅<span class="strike"> Разработать макет сайта</span></span
+            >
+          </li>
+          <br />
+          <!-- элемент списка без указания пункта сптска в виде точки, добавляю вместо него галочку, сам текст зачёркиваю при помощи класса strike -->
+          <li>
+            <span class="orange-text no-bullets"
+              >✅<span class="strike"> Разработать дизайн сайта</span></span
+            >
+          </li>
+          <br />
+          <!-- элемент списка без указания пункта сптска в виде точки, добавляю вместо него галочку, сам текст зачёркиваю при помощи класса strike -->
+          <li>
+            <span class="orange-text no-bullets"
+              >✅<span class="strike"> Сверстать сайт</span></span
+            >
+          </li>
+          <br />
+          <!-- элемент списка без указания пункта сптска в виде точки, добавляю вместо него галочку, сам текст зачёркиваю при помощи класса strike -->
+          <li>
+            <span class="orange-text no-bullets"
+              >✅<span class="strike">
+                Добавить страницы оганиченного доступа</span
+              ></span
+            >
+          </li>
+          <br />
+          <!-- элемент списка без указания пункта сптска в виде точки, добавляю вместо него галочку, сам текст зачёркиваю при помощи класса strike -->
+          <li>
+            <span class="orange-text no-bullets"
+              >✅<span class="strike"> Протестировать сайт</span></span
+            >
+          </li>
+          <br />
+          <!-- элемент списка без указания пункта сптска в виде точки, добавляю вместо него галочку, сам текст зачёркиваю при помощи класса strike -->
+          <li>
+            <span class="orange-text no-bullets"
+              >✅<span class="strike">
+                Составить пригласительное письмо от компании EcoRide, создать
+                документ с адресатами и выполнить слияние</span
+              ></span
+            >
+          </li>
+          <br />
+          <!-- элемент списка без указания пункта сптска в виде точки, добавляю вместо него галочку, сам текст зачёркиваю при помощи класса strike -->
+          <li>
+            <span class="orange-text no-bullets"
+              >✅<span class="strike">
+                Составить отчёт о реализации товара (услуг)</span
+              ></span
+            >
+          </li>
+          <br />
+          <!-- элемент списка без указания пункта сптска в виде точки, добавляю вместо него галочку, сам текст зачёркиваю при помощи класса strike -->
+          <li>
+            <span class="orange-text no-bullets"
+              >✅<span class="strike">
+                Создать базу данных и таблицы, установить связи, заполнить
+                таблицы данными, составить и выполнить запросы</span
+              ></span
+            >
+          </li>
+          <br />
+          <!-- элемент списка без указания пункта сптска в виде точки, добавляю вместо него галочку, сам текст зачёркиваю при помощи класса strike -->
+          <li>
+            <span class="orange-text no-bullets"
+              >✅<span class="strike"> Погладить котов</span></span
+            >
+          </li>
+          <br />
+          <!-- элемент списка без указания пункта сптска в виде точки, добавляю вместо него галочку, сам текст зачёркиваю при помощи класса strike -->
+          <li>
+            <span class="orange-text no-bullets"
+              >✅<span class="strike">
+                Составить отчёт о проделанной работе</span
+              ></span
+            >
+          </li>
+          <br />
+          <!-- элемент списка без указания пункта сптска в виде точки, добавляю вместо него галочку, сам текст зачёркиваю при помощи класса strike -->
+        </ul>
+      </div>
+      <img src="images/28.png" class="block-img" />
+      <!-- изображение -->
+    </section>
+
+    <!-- Блок с ссылками на страницы информации о безопасной езде, о подписке, для сотрудников и для генерального директора -->
+    <section class="block">
+      <!-- основной блок секции о самокатах -->
+      <a href="safety.html" class="green-text highlighted-link"
+        >Узнать о правилах безопасности во время поездок</a
+      ><br /><!-- ссылка и перенос строки -->
+      <a href="subscription.html" class="green-text highlighted-link"
+        >Новинка! Подписка EcoRide</a
+      ><br />
+      <!-- ссылка и перенос строки -->
+      <a href="ecoride-team-space.html" class="green-text highlighted-link"
+        >Перейти на страницу для сотрудников</a
+      ><br />
+      <!-- ссылка и перенос строки -->
+      <a href="boss-page.html" class="green-text highlighted-link active"
+        >Перейти на страницу для генерального директора</a
+      >
+      <!-- ссылка -->
+    </section>
+
+    <!-- Footer (подвал) -->
+    <footer class="background-color-green">
+      <!-- основной контейнер подвала -->
+      <div class="footer-inner">
+        <!-- внутренний флекс-контейнер: логотип слева, текст по центру, пустое пространство справа для симметрии -->
+        <div class="footer-logo">
+          <!-- блок для логотипа -->
+          <img src="images/logo.png" alt="EcoRide" class="logo-img" />
+          <!-- лого -->
+        </div>
+        <div class="footer-text">
+          <!-- блок с текстовой информацией в центре подвала -->
+          <p class="white-text footer-text">
+            © EcoRide 2025 All rights reserved.<br />
+            <!-- текст, с помощью <br> переношу текст на следующую строку -->
+            Design and development by Julia Khaipova
+          </p>
+        </div>
+        <div class="footer-empty"></div>
+        <!-- просто заглушка для выравнивания -->
+      </div>
+    </footer>
+  </body>
+</html>

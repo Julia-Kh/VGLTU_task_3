@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- объявление типа документа -->
+<html lang="ru">
+  <!-- язык - русский -->
+  <head>
+    <!-- здесь служебная информация о странице -->
+    <meta charset="UTF-8" />
+    <!-- устанавливает кодировку UTF-8 -->
+    <title>Приложение</title>
+    <!-- название страницы, отображается во вкладке браузера -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Подключение CSS-файла со стилями -->
+  </head>
+  <body class="background-color-white">
+    <!-- основной контейнер страницы, класс - для задания белого фона -->
+
+    <!-- Header (шапка) -->
+    <header class="background-color-green">
+      <!-- основной блок шапки сайта, класс задаёт зелёный фон через CSS -->
+      <div class="header-inner">
+        <!-- внутренний контейнер для логотипа, меню и иконки входа -->
+        <div class="logo">
+          <!-- контейнер логотипа -->
+          <a href="index.html">
+            <!-- ссылка на главную -->
+            <img src="images/logo.png" alt="EcoRide" class="logo-img" />
+            <!-- логотип -->
+          </a>
+        </div>
+        <nav>
+          <!-- навигационное меню -->
+          <a href="rent.html" class="white-text highlighted-link">Аренда</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="tariffs.html" class="white-text highlighted-link">Тарифы</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="promotion.html" class="white-text highlighted-link">Акции</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="app.html" class="white-text highlighted-link active"
+            >Приложение</a
+          >
+          <!-- ссылка соответствующий раздел -->
+          <a href="about-us.html" class="white-text highlighted-link">О нас</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="faq.html" class="white-text highlighted-link">FAQ</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="reviews.html" class="white-text highlighted-link">Отзывы</a>
+          <!-- ссылка соответствующий раздел -->
+          <a href="contacts.html" class="white-text highlighted-link"
+            >Контакты</a
+          >
+          <!-- ссылка соответствующий раздел -->
+        </nav>
+        <div class="login">
+          <!-- контейнер иконки входа -->
+          <a href="ecoride-club.html">
+            <!-- ссылка на страницу для зарегистрированных пользователей -->
+            <img src="images/login-icon.png" alt="Вход" class="login-icon" />
+            <!-- иконка входа -->
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Первый блок -->
+    <section class="block">
+      <!-- основной блок первой секции -->
+      <div class="block-text">
+        <!-- блок с заголовком и описанием -->
+        <h3 class="orange-text">
+          Наше приложение — твой транспорт в один клик
+        </h3>
+        <!-- заголовок -->
+        <p class="green-text">
+          Приложение открывает доступ<br />
+          <!-- описание, с помощью <br> переношу текст на следующую строку -->
+          ко всем функциям сервиса прямо<br />
+          в твоём смартфоне: ты можешь в <br />
+          любой момент найти ближайший<br />
+          самокат или электрокар,<br />
+          посмотреть уровень заряда и<br />
+          проверить свободные парковки.<br />
+          Управляй поездками,<br />
+          отслеживай расходы, сохраняй<br />
+          историю маршрутов и используй<br />
+          бонусы прямо из приложения.<br />
+          EcoRide делает городское<br />
+          движение проще, а каждый день<br />
+          — чуть свободнее.
+        </p>
+      </div>
+      <img src="images/13.png" alt="самокат" class="block-img" />
+      <!-- изображение -->
+    </section>
+
+    <!-- Второй блок -->
+    <section class="block">
+      <!-- основной блок второй секции -->
+      <div class="block-text block-text-wider">
+        <!-- контейнер для списка чтобы выровнять элементы списка по левому краю -->
+        <h3 class="orange-text">Возможности приложения:</h3>
+        <!-- заголовок -->
+        <ul class="green-text no-bullets">
+          <!-- список преимуществ,  -->
+          <li class="more-space-between-li">
+            ✅ Интерактивная карта с доступным транспортом
+          </li>
+          <!-- элемент списка, класс для добавления пространства между элементами списка -->
+          <li class="more-space-between-li">
+            ✅ Удобное бронирование и запуск самоката/авто
+          </li>
+          <!-- элемент списка, класс для добавления пространства между элементами списка -->
+          <li class="more-space-between-li">
+            ✅ Точные тарифы и расчёт стоимости в реальном времени
+          </li>
+          <!-- элемент списка, класс для добавления пространства между элементами списка -->
+          <li class="more-space-between-li">
+            ✅ Управление бронированиями и история поездок
+          </li>
+          <!-- элемент списка, класс для добавления пространства между элементами списка -->
+          <li class="more-space-between-li">
+            ✅ Поддержка и чат прямо в приложении
+          </li>
+          <!-- элемент списка, класс для добавления пространства между элементами списка -->
+          <li class="more-space-between-li">
+            ✅ Промокоды, бонусы и акции — всегда под рукой
+          </li>
+          <!-- элемент списка, класс для добавления пространства между элементами списка -->
+        </ul>
+        <img
+          src="images/14.png"
+          alt="иконки Google Play и Apple Store"
+          class="app-icons"
+        />
+        <!-- иконки Google Play и Apple Store -->
+        <div class="text-center">
+          <!-- контейнер для списка чтобы выровнять элементы списка по левому краю -->
+          <p class="orange-text">
+            Установить на
+            <a
+              href="https://play.google.com/store/apps/details?id=com.duolingo&pli=1"
+              target="_blank"
+              class="green-text app-link highlighted-link"
+              >Android</a
+            >
+            <!-- ссылка на скачивание приложения на Android -->
+          </p>
+          <p class="orange-text">
+            Установить на
+            <a
+              href="https://apps.apple.com/us/app/duolingo-language-lessons/id570060128"
+              target="_blank"
+              class="green-text app-link highlighted-link"
+              >iOS</a
+            >
+            <!-- ссылка на скачивание приложения на iOS -->
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Третий блок -->
+    <section class="block">
+      <!-- основной блок третьей секции -->
+      <h3 class="green-text">Свобода движения в каждом моменте</h3>
+      <!-- заголовок -->
+      <p class="orange-text">
+        С EcoRide город становится ближе, а поездка — приятной привычкой.
+      </p>
+      <!-- текст -->
+      <video
+        src="videos/1.mp4"
+        class="promo-video"
+        controls
+        poster="images/video-preview.png"
+      ></video>
+      <!-- видео: controls включает встроенные элементы управления воспроизведением, poster для добавления обложки -->
+      <p class="green-text">Момент, когда техника и природа в гармонии.</p>
+      <!-- текст -->
+    </section>
+
+    <!-- Блок с ссылками на страницы информации о безопасной езде, о подписке, для сотрудников и для генерального директора -->
+    <section class="block">
+      <!-- основной блок секции о самокатах -->
+      <a href="safety.html" class="green-text highlighted-link"
+        >Узнать о правилах безопасности во время поездок</a
+      ><br /><!-- ссылка и перенос строки -->
+      <a href="subscription.html" class="green-text highlighted-link"
+        >Новинка! Подписка EcoRide</a
+      ><br />
+      <!-- ссылка и перенос строки -->
+      <a href="ecoride-team-space.html" class="green-text highlighted-link"
+        >Перейти на страницу для сотрудников</a
+      ><br />
+      <!-- ссылка и перенос строки -->
+      <a href="boss-page.html" class="green-text highlighted-link"
+        >Перейти на страницу для генерального директора</a
+      >
+      <!-- ссылка -->
+    </section>
+
+    <!-- Footer (подвал) -->
+    <footer class="background-color-green">
+      <!-- основной контейнер подвала -->
+      <div class="footer-inner">
+        <!-- внутренний флекс-контейнер: логотип слева, текст по центру, пустое пространство справа для симметрии -->
+        <div class="footer-logo">
+          <!-- блок для логотипа -->
+          <img src="images/logo.png" alt="EcoRide" class="logo-img" />
+          <!-- лого -->
+        </div>
+        <div class="footer-text">
+          <!-- блок с текстовой информацией в центре подвала -->
+          <p class="white-text footer-text">
+            © EcoRide 2025 All rights reserved.<br />
+            <!-- текст, с помощью <br> переношу текст на следующую строку -->
+            Design and development by Julia Khaipova
+          </p>
+        </div>
+        <div class="footer-empty"></div>
+        <!-- просто заглушка для выравнивания -->
+      </div>
+    </footer>
+  </body>
+</html>
