@@ -151,18 +151,25 @@
           <p class="green-text">
             Также вы можете обратиться к нам через форму:
           </p>
-          <!-- заголовок формы -->
-          <form class="contact-form">
-            <!-- форма обратной связи -->
-            <input type="text" placeholder="Имя" />
-            <!-- поле ввода имени -->
-            <input type="email" placeholder="Email" />
-            <!-- поле ввода email -->
-            <textarea placeholder="Вопрос"></textarea>
-            <!-- текстовое поле для вопроса -->
-            <button type="submit">ОТПРАВИТЬ</button>
-            <!-- кнопка отправки формы (не активна) -->
-          </form>
+          <form
+            action="https://formsubmit.co/julia.khaipova@gmail.com"
+            method="POST"
+            class="contact-form"
+          >
+            <input type="text" name="Имя" placeholder="Ваше имя" required />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Ваш e-mail"
+              required
+            />
+            <textarea
+              name="Сообщение"
+              placeholder="Ваше сообщение"
+              required
+            ></textarea>
+            <button type="submit">Отправить</button>
+            <!-- кнопка отправки формы -->
         </div>
       </section>
     </section>
